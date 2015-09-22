@@ -38,7 +38,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor clearColor];
     [_imageView setImageWithURL:[NSURL URLWithString:self.mediaItem.resourcePath] placeholderImage:nil];
-    [_imageView setContentMode:self.mediaItem.imageContentMode];
+	[_imageView setContentMode:self.contentMode];
     [_imageScrollView setDelegate:self];
     [_imageScrollView setBouncesZoom:YES];
 

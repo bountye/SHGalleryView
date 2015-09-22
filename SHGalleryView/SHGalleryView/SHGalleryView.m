@@ -188,7 +188,9 @@
         ((SHVideoMediaItemViewController *)viewController).mediaControlView = _mediaControlView;
     } else {
         // image
-        viewController = (SHImageMediaItemViewController<SHGalleryViewControllerChild> *)[[SHImageMediaItemViewController alloc] init];
+		SHImageMediaItemViewController *imageVC = [[SHImageMediaItemViewController alloc] init];
+		imageVC.contentMode = _theme.shouldFillScreen ? UIViewContentModeScaleAspectFill : UIViewContentModeScaleAspectFit;
+        viewController = (SHImageMediaItemViewController<SHGalleryViewControllerChild> *)imageVC;
         viewController.mediaItem = item;
         viewController.pageIndex = index;
         ((SHImageMediaItemViewController *)viewController).disablePinchAndZoomOnImage = _disablePinchAndZoomOnImages;

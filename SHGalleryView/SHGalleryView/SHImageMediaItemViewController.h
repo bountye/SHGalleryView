@@ -13,5 +13,6 @@
 @interface SHImageMediaItemViewController : UIViewController
 
 @property (nonatomic) BOOL disablePinchAndZoomOnImage;
+@property (nonatomic) UIViewContentMode contentMode;
 
 @end

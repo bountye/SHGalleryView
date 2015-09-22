@@ -88,6 +88,11 @@
  */
 @property (nonatomic, strong) UIImage *doneButtonImage ;
 
+/**
+ *  if true, will use UIViewControllerModeAspectFill
+ *  if false, will use UIViewControllerModeAspectFit
+ */
+@property (nonatomic) BOOL shouldFillScreen;
 
 ////// Deprecated Items /////////
 

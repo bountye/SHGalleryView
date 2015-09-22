@@ -10,4 +10,13 @@
 
 @implementation SHGalleryViewTheme
 
+- (instancetype)init
+{
+	self = [super init];
+	if (self) {
+		_shouldFillScreen = YES;
+	}
+	return self;
+}
+
 @end
