@@ -19,7 +19,7 @@
 
 @property (nonatomic, strong) UIPageViewController *pageViewController;
 @property (nonatomic, strong) SHMediaControlView *mediaControlView;
-
+@property (nonatomic, strong) UIPageControl *pageControl;
 @property (nonatomic) NSInteger currentIndex;
 @property (nonatomic) NSInteger nextIndex;
 
@@ -160,6 +160,7 @@
     } else {
         direction = UIPageViewControllerNavigationDirectionReverse;
     }
+    _pageControl.currentPage = index;
 
     _currentIndex = index;
     [self initializePageViewAtIndex:_currentIndex];

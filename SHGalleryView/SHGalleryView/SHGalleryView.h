@@ -52,12 +52,6 @@ static NSString *const kNotificationMediaDone = @"kNotificationMediaDone";
 @property (nonatomic) BOOL isDoneButtonForcedHidden;
 
 /**
- *  Control Dots Index
- */
-
-@property (nonatomic, strong) UIPageControl *pageControl;
-
-/**
  *  call this method to reload your data source
  */
 - (void)reloadData;
