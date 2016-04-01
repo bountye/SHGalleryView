@@ -37,6 +37,11 @@
     [galleryView scrollToItemAtIndex:index];
 }
 
+- (void)initializePageViewAtIndex:(int)index {
+    SHGalleryView *galleryView = (SHGalleryView *)self.view;
+    [galleryView scrollToItemAtIndex:index];
+}
+
 - (void)viewWillAppear:(BOOL)animated {
     SHGalleryView *galleryView = (SHGalleryView *)self.view;
     galleryView.isDoneButtonForcedHidden = ![self isModal];

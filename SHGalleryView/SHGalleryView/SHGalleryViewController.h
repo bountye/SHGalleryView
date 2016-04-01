@@ -57,4 +57,10 @@
  */
 @property (nonatomic) BOOL hideStatusBar;
 
+/**
+ *  scrolls to a specific item specified
+ *
+ *  @param index the index to which you want to scroll.
+ */
+- (void)initializePageViewAtIndex:(int)index;
 @end
