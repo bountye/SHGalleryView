@@ -68,4 +68,9 @@ static NSString *const kNotificationMediaDone = @"kNotificationMediaDone";
  */
 - (void)setupGalleryView;
 
+/**
+ *  initialize pageview with Index
+ */
+- (void)initializePageViewAtIndex:(NSInteger)index;
+
 @end
