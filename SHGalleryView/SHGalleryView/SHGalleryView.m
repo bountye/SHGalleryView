@@ -18,7 +18,6 @@
 @interface SHGalleryView () <UIPageViewControllerDelegate, UIPageViewControllerDataSource, SHMediaControlViewDelegate, UIGestureRecognizerDelegate>
 
 @property (nonatomic, strong) UIPageViewController *pageViewController;
-@property (nonatomic, strong) UIPageControl *pageControl;
 @property (nonatomic, strong) SHMediaControlView *mediaControlView;
 
 @property (nonatomic) NSInteger currentIndex;
