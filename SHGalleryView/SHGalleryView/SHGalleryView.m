@@ -55,7 +55,7 @@
         [self addSubview:_pageControl];
     }
 
-    _mediaControlView = (SHMediaControlView *)[SHUtil viewFromNib:@"SHMediaControlView" bundle:nil];
+    _mediaControlView = (SHMediaControlView *)[SHUtil viewFromNib:@"SHMediaControlView" bundle:[NSBundle bundleForClass:[SHMediaControlView class]]];
     _mediaControlView.delegate = self;
     _mediaControlView.showPageControl = _showPageControl;
     _mediaControlView.isDoneButtonForcedHidden = _isDoneButtonForcedHidden;
