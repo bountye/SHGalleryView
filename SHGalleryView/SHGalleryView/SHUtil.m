@@ -18,7 +18,7 @@
 	UIView *view = nil;
 	
 	if (!bundle) {
-		bundle = [NSBundle mainBundle];
+		bundle = [NSBundle bundleForClass:[SHUtil class]];
 	}
 	
 	// I assume, that there is only one root view in interface file
